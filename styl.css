@@ -1,0 +1,55 @@
+body {
+ 
+    margin:0;
+    padding: 0;
+    font-family:"Inter", sans-serif;
+}
+h1{
+    font-size: 50px;
+}
+
+h3{
+    font-size: 30px;
+}
+*{
+    box-sizing: border-box;
+}
+
+header {
+position: sticky;
+height: 100%;
+background-color: lightgray;
+display: flex;
+box-shadow: 0 0 9px 23x #aba;
+padding-top:20px;
+padding-left: 120px;
+z-index:100;
+justify-content: center;
+justify-content: flex-end;
+}
+
+article {
+    position: relative;
+    display: block;
+    align-items: 150px 120px;
+    justify-content:150px 120px ;
+    padding: 150px 120px;
+    flex-direction: row;
+    margin: 0px 120px 0px 120px;
+    font-size: 20px;
+}
+
+section {
+    display: block ;
+    margin: 0px 120px 0px 120px;
+    font-size: 20px;
+}
+.article-element {
+    width: 50%;
+}
+
+footer {
+    text-align: center;
+    font-family: Verdana;
+    text-transform: capitalize;
+}

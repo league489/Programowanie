@@ -31,16 +31,37 @@ if (liczbaUsera == liczbaLosowa){
 }
 else{
     var liczbaUsera = prompt("Podaj liczbe ");
+    console.log("Jeszcze raz ");
 }
 //4
 let liczba1=parseFloat(prompt('Podaj pierwszą  liczbę'));
 let liczba2=parseFloat(prompt('Podaj drugą liczbę'));
 let liczba3=parseFloat(prompt('Podaj trzecią liczbę'));
 
-if(liczba1=liczba2 && liczba2==liczba3;){
+if(liczba1==liczba2 && liczba2==liczba3){
     console.log("Liczby są równe");
-}else if{
-
+    document.getElementById("NajLiczba").innerHTML = "Liczby są równe ";
 }
+else if(liczba1>liczba2 && liczba1>liczba3)
+{
+console.log("Liczba " + liczba1 + "jest największa");
+document.getElementById("NajLiczba").innerHTML = "Liczba " + liczba1  + " jest największa";
+}
+else if(liczba2>liczba1 && liczba2>liczba3)
+{
+console.log("Liczba " + liczba2 + "jest największa");
+document.getElementById("NajLiczba").innerHTML = "Liczba " + liczba2  + " jest największa";
+}
+else if(liczba3>liczba1 && liczba3>liczba2)
+{
+console.log("Liczba " + liczba3 + "jest największa");
+document.getElementById("NajLiczba").innerHTML = "Liczba " + liczba3  + " jest największa";
+}
+else
+{
+    console.log("Błąd");
+    document.getElementById("NajLiczba").innerHTML = "Błąd";
+}
+
 
 

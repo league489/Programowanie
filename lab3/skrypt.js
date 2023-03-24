@@ -62,6 +62,52 @@ else
     console.log("Błąd");
     document.getElementById("NajLiczba").innerHTML = "Błąd";
 }
+//5
+function NWD(a,b) {
+    if(a>b){
+        while(a%b!=0){
+var nwd = a%b;
+a=b;
+b = nwd;
+        }
+    }
+    else if(a==b){
+console.log("Liczby są równe , ich NWD wynosi 1");
+document.getElementById("nwd").innerHTML = "Liczby są równe , ich NWD wynosi 1";
+    }
+    else{
+        while(b%a!=0){
+            var nwd = b%a;
+            b=a;
+            a = nwd;
+                    }  
+    }
+  return nwd;
+}
 
+var x = NWD(12,40);
+console.log("NWD podanych liczb wynosi "+ x);
+document.getElementById("nwd").innerHTML = "NWD podanych liczb wynosi "+ x;
+//6
+let student1 = {imie:"Rafał",nazwisko:"Kiełbowicz", wiek:20};
+let student2 = {imie:"Jan",nazwisko:"Kowalski", wiek:22};
+let student3 = {imie:"Adam",nazwisko:"Nowak", wiek:21};
+console.log(student1);
+console.log(student2);
+console.log(student3);
+//7
+let name = prompt("Podaj imię: ");
+let surname = prompt("Podaj nazwisko: ");
+let age = prompt("Podaj wiek: ");
+let uczeń =  {imie:name,nazwisko:surname, wiek:age};
+console.log(uczeń);
+//8
+function time(){
+    var d = new Date();
+    var s = d.getSeconds();
+    var m = d.getMinutes();
+    var h = d.getHours();
+    document.getElementById("zegar").innerHTML=(h + ":" + m + ":" + s);
+}
 
-
+setInterval(time,1000);

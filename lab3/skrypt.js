@@ -1,6 +1,7 @@
 /*
 zadanie 1 - kalkulator
 */
+/*
 var a = 20;
 var b = 10;
 
@@ -95,12 +96,15 @@ let student3 = {imie:"Adam",nazwisko:"Nowak", wiek:21};
 console.log(student1);
 console.log(student2);
 console.log(student3);
+*/
 //7
-let name = prompt("Podaj imię: ");
-let surname = prompt("Podaj nazwisko: ");
-let age = prompt("Podaj wiek: ");
+function nowy_uczen(){
+let name = document.getElementById("imie").value;
+let surname = document.getElementById("nazwisko").value;
+let age = document.getElementById("wiek").value;
 let uczeń =  {imie:name,nazwisko:surname, wiek:age};
-console.log(uczeń);
+document.getElementById("uczen").innerHTML = uczeń.imie + "<br>" + uczeń.nazwisko + "<br>" + uczeń.wiek;
+}
 //8
 function time(){
     var d = new Date();

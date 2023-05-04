@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+<div>
+    <p>Zadanie 1</p>
+    <table id = "tabliczka">
+        <script>
+            const table = document.querySelector('#tabliczka');
+            for (let i = 1; i <= 10; i++) {
+                const row = document.createElement('tr');
+                for (let j = 1; j <= 10; j++) {
+                    const cell = document.createElement('td');
+                    const value = i * j;
+                    cell.textContent = value;
+                    row.appendChild(cell);
+                }
+                table.appendChild(row);
+            }
+        </script>
+    </table>
+</div>
+<div>
+    
+    <p>Zadanie 2 </p>
+    <input type = "number" max = "20" id = "rekordy" >
+    <br>
+    <button onclick="person()">Generuj osobę</button>
+    <br>
+    <div id="generowane_osoby"></div>
+</div>
+
+<script src="lab5-skrypt.js" ></script>
+    </body>
+</html>

@@ -1,6 +1,4 @@
 form{
-    position:absolute;
-    left: 45%;
     background-color: brown;
     width:10%;
     border: double 5px gold;
@@ -13,3 +11,5 @@ input{
 label{
     margin: 5px;
 }
+
+
